@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/jquery-ui.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="/js/UserForm.js"></script>
+
+</head>
+<body>
+
+    <div class="row" style="border-style: solid;">
+        <div class="col-sm-12" style="margin-top:20px;text-align:center;">
+            <h3>
+                <b>Community Data Analytics for Social Harm <i>(C-DASH)</i></b>
+            </h3>
+        </div>
+    </div>
+
+    <div class="col-sm-12" style="margin-top:20px;text-align:center;">
+        <label id="validationSummary"></label>
+    </div>
+
+    <div class="container">
+        <h2>User Request Form:</h2>
+
+        <div class="row">
+            <div class="panel panel-default col-sm-6" style="align-content:center; border-color:gray;border-width:5px">
+                <div class="form-group">
+                    <label>Incident Code:</label>
+                    <select id="ddlIncidentCode" class="form-control">
+                        <option>1-DWI Arrest</option>
+                        <option>2-Drug Overdose</option>
+                        <option>3-Vandalism</option>
+                        <option>4-Fraud</option>
+                        <option>5-SUICIDE ATTEMPT</option>
+                        <option>6-Forgery</option>
+                        <option>7-Embezzlement</option>
+                        <option>8-Larceny</option>
+                        <option>9-Residential Burglary</option>
+                        <option>10-Vehicle Crash No Influence</option>
+                        <option>11-Motor Vehicle Theft</option>
+                        <option>12-Simple Assault</option>
+                        <option>13-Arson</option>
+                        <option>14-Aggravated Assault</option>
+                        <option>15-Robbery</option>
+                        <option>16-Vehicle Crash Drugs or Alcohol</option>
+                        <option>17-Rape</option>
+                        <option>18-Homicide</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Cost:</label>
+                    <input type="text" class="form-control numeric" id="txtcost" />
+                </div>
+
+                <div class="form-group">
+                    <label>Zipcode:</label>
+                    <input type="text" class="form-control numeric" id="txtZipcode" />
+                </div>
+
+                <div class="form-group">
+                    <label> Hours:</label>
+                    <select id="ddlHrs" class="form-control"></select>
+                </div>
+
+                <div class="form-group">
+                    <label> Month:</label>
+                    <select id="ddlMonth" class="form-control"></select>
+                </div>
+
+                <div class="form-group">
+                    <label> Day:</label>
+                    <select id="ddlDay" class="form-control"></select>
+                </div>
+
+                <div class="form-group">
+                    <label> Year:</label>
+                    <select id="ddlYears" class="form-control">
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button id="btnSubmit" type="submit" value="Submit" style="background-color:gray;">
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
